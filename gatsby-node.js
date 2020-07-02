@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+/*
 const path = require("path")
 const fs = require("fs")
 
@@ -25,3 +26,4 @@ exports.onPostBuild = () => {
     path.join(__dirname, "public")
   )
 }
+*/
