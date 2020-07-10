@@ -1,5 +1,6 @@
 import React from 'react';
 import Copa_ingrediente from './copa_ingrediente';
+import Copa_precio from './copa_precio';
 
 const Copa = ({node, index}) => {
     return (
@@ -18,7 +19,8 @@ const Copa = ({node, index}) => {
                     <Copa_ingrediente ingrediente={node.complemento2}></Copa_ingrediente>
                     <Copa_ingrediente ingrediente={node.complemento3}></Copa_ingrediente>
                 </ul>
-                <h5 className="copa__precio">{node.precio}</h5>
+                <Copa_precio precio={node.precio}></Copa_precio>
+                
             </div>
         </div>
     );

@@ -117,6 +117,16 @@ h1{
   width: 50px;
   height: 50px;
   border: 1px solid beige;
+  font-size: 24px;
+}
+.copa__precioComa{
+}
+.copa__precioMoneda{
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-left: 2px;
 }
 .copa__ingredientes{
   list-style: none;
@@ -130,7 +140,7 @@ h1{
   margin: 5px 20px;
 }
 .copa__piwrapper{
-  background-color: gray;
+  background-color: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,7 +154,9 @@ h1{
 .copa__texto-ingrediente{
   vertical-align: middle;
   display: inline-block;
+  margin-left: 5px;
 }
+
 
 /* NOT MOBILE DEVICES */
 @media (min-width: 640px) { 
