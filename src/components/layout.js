@@ -24,23 +24,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
-    </>
   )
 }
 
@@ -49,3 +35,23 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+
+/*
+
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+
+        */
+/*
+ <Header siteTitle={data.site.siteMetadata.title} />
+<footer>
+  © {new Date().getFullYear()}, Creado por 
+  {` `}
+  <a href="mailto:juanfe.monfort@gmail.com">Juan F. Monfort</a>
+</footer>
+
+*/

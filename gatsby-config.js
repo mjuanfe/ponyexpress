@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Pony Express Web App`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#3a5a56`,
+        theme_color: `#3a5a56`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -34,7 +34,23 @@ module.exports = {
           worksheetTitle: 'principal',
           credentials: require('./credentials.json')
       }
-  },
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
+          worksheetTitle: 'Copas',
+          credentials: require('./credentials.json')
+      }
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/ // See below to configure properly
+        }
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
