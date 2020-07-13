@@ -5,7 +5,7 @@ const Copa_ingrediente = ({ingrediente}) => {
     if(ingrediente != null){
         return(
             <li className='copa__ingrediente'>
-                <img className='copa__bola-ingrediente' src={`../../icons/svg/${ingrediente}.svg`} alt="Ingrediente" />
+                <img className='copa__bola-ingrediente' src={`../../icons/2x/${ingrediente}_2x.png`} alt="Ingrediente" />
                 <p className='copa__texto-ingrediente'>{ingrediente}</p>
             </li>
         )
