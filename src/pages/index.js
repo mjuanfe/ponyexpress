@@ -5,12 +5,15 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Header_logo from "../components/header_logo"
+import Helmet from "react-helmet"
 //import ListaCarta from "./carta"
 //import CartaTest from "./carta"
 
 const IndexPage = () => (
   <div >
+    <Helmet>
     <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
+    </Helmet>
     <Layout>
       <SEO title="Munera" />
       <Header_logo></Header_logo>
@@ -36,7 +39,7 @@ export default IndexPage
 */
 
 /*
-
+<meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
    
     <h1>Bienvenido a Pony Express</h1>
     <p>La auténtia heladería-cafetería</p>
