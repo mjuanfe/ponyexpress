@@ -10,17 +10,18 @@ import Header_logo from "../components/header_logo"
 
 const IndexPage = () => (
   <div >
-  <Layout>
-    <SEO title="Munera" />
-    <Header_logo></Header_logo>
-    <div className="navIndexWrapper">
-      <nav className="navIndex">
-        <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
-        <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROS</Link>
-        <Link className="navIndex__item" to="/carta" state={{modal: true}}>VER CARTA</Link>
-      </nav>
-    </div>
-  </Layout>
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
+    <Layout>
+      <SEO title="Munera" />
+      <Header_logo></Header_logo>
+      <div className="navIndexWrapper">
+        <nav className="navIndex">
+          <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
+          <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROS</Link>
+          <Link className="navIndex__item" to="/carta" state={{modal: true}}>VER CARTA</Link>
+        </nav>
+      </div>
+    </Layout>
   </div>
 )
 
