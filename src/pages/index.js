@@ -11,9 +11,7 @@ import Helmet from "react-helmet"
 
 const IndexPage = () => (
   <div >
-    <Helmet>
-    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
-    </Helmet>
+
     <Layout>
       <SEO title="Munera" />
       <Header_logo></Header_logo>
@@ -39,6 +37,9 @@ export default IndexPage
 */
 
 /*
+    <Helmet>
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
+    </Helmet>
 <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
    
     <h1>Bienvenido a Pony Express</h1>

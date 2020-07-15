@@ -55,4 +55,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
+
+
+/*
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+GATSBY_GRAPHQL_IDE=playground
+*/

@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 const bienvenido = props => {
     return (
         <div>
-            Bienvenido!!
+            Bienvenido!!!
         </div>
     );
 };

@@ -1,89 +1,65 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import LayoutSections from "../components/layout_sections"
-import Copa from "../components/copa"
 
-export default function ListaCarta({ data, location }) {
-  console.log(data);
+export default function Carta({ data, location }) {
+   // console.log(location.pathname);
   return (
-    
-      <LayoutSections sectionname='CARTA'>
-        
-        {data.allGoogleSheetCopasRow.edges.map(({ node }, index) => (
-          <Copa key={index} node={node}></Copa>
-        ))}
-      </LayoutSections>
-    
+
+    <LayoutSections sectionname='CARTA'>
+     
+      <p className="carta__mensaje">
+        Con el buen tiempo ponemos en marcha nuestra famosa heladería <br></br>
+        Explora aquí la gran oferta de <strong>helados</strong> <br></br>
+        Como siempre tienes disponible el habitual servicio de <strong>cafetería y bar</strong>. <br></br>
+         Pregunta a nuestros camareros!
+      </p>
+      <ul>
+        {
+          cartaIndex.map((data, index) => {
+          return (<Link to={data.route} key={index}><li>{data.name}</li></Link>)
+          })
+        }
+      </ul>
+    </LayoutSections>
+
   )
-}
-/*
-export const query = graphql`
+};
+
+const cartaIndex = [
   {
-    allGoogleSheetPrincipalRow {
-      edges {
-        node {
-          precio
-          producto
-          familia
-          descripcion
-        }
-      }
-    }
-  }
-`*/
-
-
-export const query = graphql`
+    route: '/copas',
+    name: 'COPAS'
+  },
   {
-    allGoogleSheetCopasRow {
-      edges {
-        node {
-          nombre
-          categoria
-          descripcion
-          precio
-          bola1
-          bola2
-          bola3
-          bola4
-          bola5
-          complemento1
-          complemento2
-          complemento3
-          base
-        }
-      }
-    }
-  }
-`
-
-//export default CartaTest
+    route: '/especialidades',
+    name: 'ESPECIALIDADES'
+  },
+  {
+    route: '/granizados',
+    name: 'GRANIZADOS'
+  },
+  {
+    route: '/copas_simples',
+    name: 'COPAS SIMPLES'
+  },
+  {
+    route: '/tarrinas',
+    name: 'TARRINAS'
+  },
+  {
+    route: '/cucuruchos',
+    name: 'CUCURUCHOS'
+  },
+  {
+    route: '/gofres_crepes_tortitas',
+    name: 'GOFRES, CREPES, TORTITAS'
+  },
+];
 /*
-  console.log(data);
-  console.log(location);
-
-
-        <h1>Lista cartaa</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>familia</th>
-              <th>producto</th>
-              <th>descripcion</th>
-              <th>precio</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.allGoogleSheetPrincipalRow.edges.map(({ node }, index) => (
-              <tr key={index}>
-                <td>{node.familia}</td>
-                <td>{node.producto}</td>
-                <td>{node.descripcion}</td>
-                <td>{node.precio}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+  type Sequence {
+    items(first: Int): [Item]
+  }
 
 
   */

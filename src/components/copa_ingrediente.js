@@ -1,5 +1,4 @@
 import React from 'react';
-import Café from "../icons/SVG/Café.svg";
 
 const Copa_ingrediente = ({ingrediente}) => {
     if(ingrediente != null){

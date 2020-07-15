@@ -1,6 +1,6 @@
 /**
  * Implement Gatsby's Browser APIs in this file.
- *
+ *   jf
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 

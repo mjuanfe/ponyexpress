@@ -24,26 +24,6 @@ header{
   align-items: center;
 }
 */
-.navbarWrapper{
-  height: 50px;
-  background-color: gray;
-}
-.navbar {
- display: flex;
- align-items: center;
- justify-content: space-between;
- height: 50px;
-}
-.navbar__LeftButton{
-  margin: 7px;
-  height: 30px;
-  width: 30px;
-}
-.navbar__RightButton{
-  margin: 7px;
-  height: 30px;
-  width: 30px;
-}
 
 
 a{ 
@@ -96,11 +76,49 @@ h1{
   overflow: hidden;
 }
 
-
+.navbarWrapper{
+  height: 50px;
+  background-color: gray;
+}
+.navbar {
+  /* display: flex; */
+  /* align-items: center; */
+  height: 50px;
+  border-bottom: 1px solid #4e4e4e;
+}
+.navbar__LeftButton{
+  margin: 9px 0 0 10px;
+  height: 30px;
+  width: 30px;
+  fill: whitesmoke;
+}
+.navbar__RightButton{
+  margin: 7px;
+  height: 30px;
+  width: 30px;
+}
+.navbar__section{
+  position: absolute;
+  display: inline-block;
+  line-height: 50px;
+  /* margin: 0 auto; */
+  margin-top: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+.carta__mensaje{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.89rem;
+  font-weight: 300;
+  margin: 0 30px;
+  padding: 22px 0;
+  text-align: center;
+  border-bottom: 1px solid #404040;
+}
 .copa{
   font-family: 'Roboto';
-  margin: 16px 15px 0px 15px;
-  padding: 0px 20px 15px 20px;
+  margin: 16px 17px 0px 17px;
+  padding: 0px 10px 15px 10px;
   border-bottom: 1px solid #525252;
 }
 .copa__nombre{
@@ -120,6 +138,7 @@ h1{
   font-size: 24px;
   display: inline-block;
   text-align: right;
+  font-weight: 500;
 }
 .copa__precioComa{
 }
@@ -157,6 +176,7 @@ h1{
   vertical-align: middle;
   display: inline-block;
   margin-left: 5px;
+  width: 90px;
 }
 
 
@@ -179,3 +199,12 @@ h1{
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
     */
+
+    /*
+.copa__texto-ingrediente{
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+*/

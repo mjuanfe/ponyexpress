@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "pony-express-web",
   "private": true,
   "description": "Pony express web",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Juanfe Monfort <juanfe.monfort@gmail.com>",
   "dependencies": {
     "gatsby": "^2.23.12",
     "gatsby-cli": "^2.12.52",
@@ -22,6 +22,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -39,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mjuanfe/ponyexpress"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
