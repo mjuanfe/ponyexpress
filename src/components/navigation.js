@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 //import PropTypes from "prop-types"
 import Arrowleft from '../icons/arrow-left.svg';
 
-const Navigation = ({ sectionname }) => {
+const Navigation = ({ sectionname, urlBack }) => {
     return (
         <div className="navigation">
             <div className="navbar">
-                <Link to="/"><Arrowleft className="navbar__LeftButton"></Arrowleft></Link>
+                <Link to={urlBack}><Arrowleft className="navbar__LeftButton"></Arrowleft></Link>
                 
                 <h1 className="navbar__section">{sectionname}</h1>
                 

@@ -2,10 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+//mport Image from "../components/image"
 import SEO from "../components/seo"
 import Header_logo from "../components/header_logo"
-import Helmet from "react-helmet"
+//import Helmet from "react-helmet"
 //import ListaCarta from "./carta"
 //import CartaTest from "./carta"
 
@@ -27,26 +27,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-
-/*
-   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-
-*/
-
-/*
-    <Helmet>
-    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
-    </Helmet>
-<meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' "></meta>
-   
-    <h1>Bienvenido a Pony Express</h1>
-    <p>La auténtia heladería-cafetería</p>
-    <p>Now go build something great.</p>
- 
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-
-    */

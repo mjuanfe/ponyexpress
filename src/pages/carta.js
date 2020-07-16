@@ -1,42 +1,45 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import LayoutSections from "../components/layout_sections"
+import LayoutCarta from "../components/layout_carta"
 
 export default function Carta({ data, location }) {
    // console.log(location.pathname);
   return (
 
-    <LayoutSections sectionname='CARTA'>
+    <LayoutCarta sectionname='CARTA'>
      
       <p className="carta__mensaje">
-        Con el buen tiempo ponemos en marcha nuestra famosa heladería <br></br>
-        Explora aquí la gran oferta de <strong>helados</strong> <br></br>
+        Con el buen tiempo ponemos en marcha nuestra famosa heladería, <br></br>
+        explora aquí la gran oferta de <strong>helados.</strong> <br></br> <br></br>
         Como siempre tienes disponible el habitual servicio de <strong>cafetería y bar</strong>. <br></br>
          Pregunta a nuestros camareros!
       </p>
-      <ul>
+      <ul className="carta__lista">
         {
           cartaIndex.map((data, index) => {
-          return (<Link to={data.route} key={index}><li>{data.name}</li></Link>)
+          return (
+            <Link to={data.route} key={index} >
+              <li className="carta__itemLista">{data.name}</li>
+            </Link>)
           })
         }
       </ul>
-    </LayoutSections>
+    </LayoutCarta>
 
   )
 };
 
 const cartaIndex = [
   {
-    route: '/copas',
+    route: '/carta_copas',
     name: 'COPAS'
   },
   {
-    route: '/especialidades',
+    route: '/carta_especialidades',
     name: 'ESPECIALIDADES'
   },
   {
-    route: '/granizados',
+    route: '/carta_granizados',
     name: 'GRANIZADOS'
   },
   {
@@ -56,6 +59,8 @@ const cartaIndex = [
     name: 'GOFRES, CREPES, TORTITAS'
   },
 ];
+
+
 /*
   type Sequence {
     items(first: Int): [Item]

@@ -5,7 +5,7 @@ import Navigation from './navigation'
 const LayoutSections = ({children, sectionname}) => {
     return (
         <div className='layoutSections'>
-            <Navigation sectionname={sectionname}></Navigation>
+            <Navigation sectionname={sectionname} urlBack='/carta'></Navigation>
             <main>{children}</main>
         </div>
     );

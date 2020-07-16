@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Copa_precio = ({precio}) => {
+const Producto_precio = ({precio}) => {
     if(precio[0] != null){
         //console.log(precio);
         const [concoma, sincoma] = /(.*)\,/.exec(precio);
@@ -17,4 +17,4 @@ const Copa_precio = ({precio}) => {
     }
 };
 
-export default Copa_precio;
+export default Producto_precio;
