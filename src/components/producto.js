@@ -3,6 +3,7 @@ import Producto_ingrediente from './producto_ingrediente';
 import Producto_precio from './producto_precio';
 
 const Producto = ({node, index}) => {
+    console.log(node.bola3);
     return (
         <div className="producto" key={index}>
             <h1 className="producto__nombre">{node.nombre}</h1>           

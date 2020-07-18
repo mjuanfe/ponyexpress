@@ -24,6 +24,13 @@ export default Productos;
 
         </div>
 
+        handleScroll() {
+    const { scrollPos } = this.state;
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top,
+      show: document.body.getBoundingClientRect().top > scrollPos
+    });
+  }
 
     )
 

@@ -13,6 +13,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    `gatsby-transformer-csv`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -27,22 +36,7 @@ module.exports = {
         icon: `src/images/favicon_pony.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'principal',
-          credentials: require('./credentials.json')
-      }
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'Copas',
-          credentials: require('./credentials.json')
-      }
-    },
+
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -59,6 +53,28 @@ module.exports = {
 
 
 /*
+
+
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
+          worksheetTitle: 'principal',
+          credentials: require('./credentials.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
+          worksheetTitle: 'Copas',
+          credentials: require('./credentials.json')
+      }
+    },
+
+
+
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
