@@ -31,15 +31,7 @@ module.exports = {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'principal',
-          credentials: require('./credentials.json')
-      }
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'Copas',
+          worksheetTitle: 'Principal',
           credentials: require('./credentials.json')
       }
     },

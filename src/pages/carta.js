@@ -43,20 +43,16 @@ const cartaIndex = [
     name: 'GRANIZADOS'
   },
   {
-    route: '/copas_simples',
-    name: 'COPAS SIMPLES'
+    route: '/carta_tarrinas_cucuruchos',
+    name: 'TARRINAS Y CUCURUCHOS'
   },
   {
-    route: '/tarrinas',
-    name: 'TARRINAS'
-  },
-  {
-    route: '/cucuruchos',
-    name: 'CUCURUCHOS'
-  },
-  {
-    route: '/gofres_crepes_tortitas',
+    route: '/carta_gofres_crepes_tortitas',
     name: 'GOFRES, CREPES, TORTITAS'
+  },
+  {
+    route: '/carta_sabores_helado',
+    name: 'SABORES HELADO'
   },
 ];
 
@@ -65,6 +61,13 @@ const cartaIndex = [
   type Sequence {
     items(first: Int): [Item]
   }
-
+    {
+    route: '/cucuruchos',
+    name: 'CUCURUCHOS'
+  },
+  {
+    route: '/copas_simples',
+    name: 'COPAS SIMPLES'
+  },
 
   */

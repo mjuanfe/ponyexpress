@@ -9,11 +9,14 @@ export default function ListaCarta({ data, location }) {
   
   return (
     <LayoutSections sectionname='COPAS'>
-        <Productos categoria='Copas' productos={getProductsByCategory(data,'Copas')}></Productos>
-        <h1 className="carta__tituloSubseccion">Copas para niños</h1>
+        <h1 className="carta__tituloSubseccion">Las clásicas</h1>
+        <Productos categoria='copas' productos={getProductsByCategory(data,'Copas')}></Productos>
+        <h1 className="carta__tituloSubseccion">Para niños</h1>
         <Productos categoria='Copas para niños' productos={getProductsByCategory(data,'Copas para niños')}></Productos>
-        <h1 className="carta__tituloSubseccion">Copas con alcohol</h1>
+        <h1 className="carta__tituloSubseccion">Con Alcohol</h1>
         <Productos categoria='Copas con alcohol' productos={getProductsByCategory(data,'Copas con alcohol')}></Productos>
+        <h1 className="carta__tituloSubseccion">Simples</h1>
+        <Productos categoria='Copas simples' productos={getProductsByCategory(data,'Copas simples')}></Productos>
     </LayoutSections>
   )
 }
@@ -30,7 +33,7 @@ export default function ListaCarta({ data, location }) {
 function getProductsByCategory(data, categoria){
   var products;
   
-  products = data.allGoogleSheetCopasRow.edges.filter((product, index) => {
+  products = data.allGoogleSheetPrincipalRow.edges.filter((product, index) => {
     if(product.node.categoria == categoria){
       //console.log(product.node);
       return product.node
@@ -43,7 +46,7 @@ function getProductsByCategory(data, categoria){
 
 export const query = graphql`
   {
-    allGoogleSheetCopasRow {
+    allGoogleSheetPrincipalRow {
       edges {
         node {
           nombre

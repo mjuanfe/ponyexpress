@@ -15,7 +15,7 @@ export default function ListaCarta3({ data, location }) {
 function getProductsByCategory(data, categoria){
   var products;
   
-  products = data.allGoogleSheetCopasRow.edges.filter((product, index) => {
+  products = data.allGoogleSheetPrincipalRow.edges.filter((product, index) => {
     if(product.node.categoria == categoria){
       //console.log(product.node);
       return product.node
@@ -28,7 +28,7 @@ function getProductsByCategory(data, categoria){
 
 export const query = graphql`
   {
-    allGoogleSheetCopasRow {
+    allGoogleSheetPrincipalRow {
       edges {
         node {
           nombre

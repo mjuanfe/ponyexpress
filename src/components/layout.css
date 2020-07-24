@@ -40,6 +40,10 @@ h1{
   font-family: 'PT Serif';
   font-weight: bold;
 }
+.layoutSections{
+  margin-top: 50px;
+  padding-top: 1px;
+}
 .headerLogo{
   display: flex;
   align-items: center;
@@ -81,9 +85,11 @@ h1{
   background-color: gray;
 }
 .navbar {
-  /* display: flex; */
-  /* align-items: center; */
+  position: fixed;
+  top: 0;
   height: 50px;
+  width: 100%;
+  background-color: #beb3bf;
   border-bottom: 1px solid #4e4e4e;
 }
 .navbar__LeftButton{
@@ -139,7 +145,7 @@ h1{
 .producto{
   font-family: 'Roboto';
   margin: 16px 17px 0px 17px;
-  padding: 0px 10px 15px 10px;
+  padding: 0px 5px 15px 5px;
   border-bottom: 1px solid #525252;
 }
 .producto__nombre{
@@ -153,7 +159,7 @@ h1{
   margin: 3px 0 15px 0;
 }
 .producto__precio{
-  width: 50px;
+  width: 73px;
   /* height: 50px; */
   /* border: 1px solid beige; */
   font-size: 24px;
@@ -162,13 +168,16 @@ h1{
   font-weight: 500;
 }
 .producto__precioComa{
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
 }
 .producto__precioMoneda{
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
   margin-top: 3px;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 .producto__ingredientes{
   list-style: none;
@@ -203,11 +212,55 @@ h1{
 
 /* =========== */
 /* COPAS */
+.copas{
+  /*padding-top: 3px;*/
+}
+
+
+.navigation--active{
+  visibility: visible;
+  /*position:fixed;*/
+}
+.navigation--hidden{
+  display: none;
+  visibility: hidden;
+}
+
+
+
+/* NOT MOBILE DEVICES */
+@media (min-width: 640px) { 
+  
+.logoSvg{
+  fill: #e5ff00;
+}
+
+}
+/*
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}*/
+/*
+ font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    */
+
+    /*
+.copa__texto-ingrediente{
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
 
 .copa{
   font-family: 'Roboto';
-  margin: 16px 17px 0px 17px;
-  padding: 0px 10px 15px 10px;
+  margin: 16px 17px 0 17px;
+  padding: 0px 10px 0 10px;
   border-bottom: 1px solid #525252;
 }
 .copa__nombre{
@@ -223,7 +276,7 @@ h1{
 .copa__precio{
   width: 50px;
   /* height: 50px; */
-  /* border: 1px solid beige; */
+  /*border: 1px solid beige; 
   font-size: 24px;
   display: inline-block;
   text-align: right;
@@ -270,32 +323,5 @@ h1{
 
 
 
-
-/* NOT MOBILE DEVICES */
-@media (min-width: 640px) { 
-  
-.logoSvg{
-  fill: #e5ff00;
-}
-
-}
-/*
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}*/
-/*
- font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-    */
-
-    /*
-.copa__texto-ingrediente{
-  vertical-align: middle;
-  display: inline-block;
-  margin-left: 5px;
-}
 
 */
