@@ -18,7 +18,7 @@ const IndexPage = () => (
       <div className="navIndexWrapper">
         <nav className="navIndex">
           <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
-          <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROS</Link>
+          <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROSs</Link>
           <Link className="navIndex__item" to="/carta" state={{modal: true}}>VER CARTA</Link>
         </nav>
       </div>
