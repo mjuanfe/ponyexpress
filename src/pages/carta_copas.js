@@ -15,7 +15,7 @@ export default function ListaCarta({ data, location }) {
         <Productos categoria='Copas para niños' productos={getProductsByCategory(data,'Copas para niños')}></Productos>
         <h1 className="carta__tituloSubseccion">Con Alcohol</h1>
         <Productos categoria='Copas con alcohol' productos={getProductsByCategory(data,'Copas con alcohol')}></Productos>
-        <h1 className="carta__tituloSubseccion">Simples</h1>
+        <h1 className="carta__tituloSubseccion">Al gusto</h1>
         <Productos categoria='Copas simples' productos={getProductsByCategory(data,'Copas simples')}></Productos>
     </LayoutSections>
   )
