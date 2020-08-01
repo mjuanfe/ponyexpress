@@ -1,14 +1,14 @@
 import React from 'react';
 
 const Producto_precio = ({precio}) => {
-    console.log(precio);
+    //console.log(precio);
     if(precio[0] != null){
         //console.log(/(.*)\,/.exec(precio));
-        console.log(/\,(\d)/.exec(precio)); //decimales  /\,(\d+)\€/
+        //console.log(/\,(\d)/.exec(precio)); //decimales  /\,(\d+)\€/
         const [decimalescoma, decimalessincoma] = /\,(\d)/.exec(precio);
         const [concoma, sincoma] = /(.*)\,/.exec(precio);
 
-        console.log(decimalessincoma);
+        //console.log(decimalessincoma);
         return (
             <div className="producto__precio">
                 {sincoma}

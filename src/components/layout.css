@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #232323;
+  background-color: #1A1A1A;
 }
 /*
 header{
@@ -24,8 +24,6 @@ header{
   align-items: center;
 }
 */
-
-
 a{ 
   color: var(--color-font-1);
   text-decoration: none;
@@ -58,7 +56,7 @@ h1{
 }
 .navIndexWrapper{
   width: 80%;
-  background-color: #1A1A1A;
+  background-color: #101010;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -89,7 +87,7 @@ h1{
   top: 0;
   height: 50px;
   width: 100%;
-  background-color: #beb3bf;
+  background-color: #232323;
   border-bottom: 1px solid #4e4e4e;
 }
 .navbar__LeftButton{
@@ -111,6 +109,7 @@ h1{
   margin-top: 0;
   right: 50%;
   transform: translateX(50%);
+  font-size: 14px;
 }
 .carta__mensaje{
   
@@ -159,6 +158,7 @@ h1{
   margin: 3px 0 15px 0;
 }
 .producto__precio{
+  font-family: 'Roboto', sans-serif;
   width: 73px;
   /* height: 50px; */
   /* border: 1px solid beige; */
@@ -209,6 +209,136 @@ h1{
   width: 90px;
 }
 
+.cremas{
+  margin: 30px;
+}
+
+.productoCrema{
+  height: 42px;
+  padding: 5px 0;
+  margin-top: 2px;
+  display:flex;
+}
+.productoCrema__icono{
+  height: 40px;
+}
+.productoCrema__texto{
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.productoCrema__nombre{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  display: inline;
+  margin-right: 8px;
+}
+.productoCrema__etiquetas{
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  list-style: none;
+  display: inline;
+  line-height: 11px;
+}
+.productoCrema__etiqueta{
+  display: inline-block;
+  margin: 2px 8px 0 0px;
+  padding: 1px 6px 1px 6px;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+.productoCrema__etiqueta--sinazucar{
+  color: #93c2ef;
+  border: 1px solid #93c2ef;
+  /* border-left: 0; */
+  /* border-top: 0; */
+  /* border-right: 0; */
+  /* border-bottom: 0;*/
+}
+.productoCrema__etiqueta--vegano{
+  color: #5ed05e;
+  border: 1px solid #5ed05e;
+  /* border-left: 0; */
+  /* border-top: 0; */
+  /* border-right: 0; */
+  /* border-bottom: 0;*/
+}
+/* Producto exp */
+.tarrinas, .cucuruchos, .gofres_crepes_tortitas, .otros{
+  margin: 30px 35px 0 35px;
+}
+.cucuruchos .productoBig {
+  height: 110px;
+}
+
+.productoBig{
+  height: 90px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.productoBig__nombre{
+  width: 35%;
+  margin-top: 2px;
+}
+.productoBig__precio{
+  width: 15%;
+}
+.productoBig_iconoWrapper{
+  width: 15%;
+}
+.productoBig_icono{
+  width: 36px;
+  display: block;
+  margin: 0 auto;
+}
+.productoBig_icono--grande{
+  width: 43px;
+}
+.productoBig_icono--grandeCucu{
+  width: 29px;
+}
+.productoBig_icono--dulce{
+  width: 70px;
+}
+.espaciador{
+  display: block;
+  height: 15px;
+}
+.espaciador--2{
+  height: 150px;
+}
+
+.eligeTuSabor{
+  margin: 30px 40px 40px 30px;
+}
+.eligeTuSabor__textWrapper{
+  margin-top: 33px;
+}
+.eligeTuSabor__iconos{
+  display: flex;
+  justify-content: space-between;
+}
+.eligeTuSabor__icono{
+  width:  76px;
+}
+.eligeTuSabor__titulo{
+  font-size: 24px;
+  text-align: center;
+}
+.eligeTuSabor__lista{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+  margin-top: 5px;
+}
 
 /* =========== */
 /* COPAS */
@@ -236,6 +366,9 @@ h1{
 }
 
 }
+
+
+  
 /*
 @media only screen and (max-width: 480px) {
   html {

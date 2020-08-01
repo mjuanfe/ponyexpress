@@ -55,19 +55,3 @@ const cartaIndex = [
     name: 'SABORES HELADO'
   },
 ];
-
-
-/*
-  type Sequence {
-    items(first: Int): [Item]
-  }
-    {
-    route: '/cucuruchos',
-    name: 'CUCURUCHOS'
-  },
-  {
-    route: '/copas_simples',
-    name: 'COPAS SIMPLES'
-  },
-
-  */

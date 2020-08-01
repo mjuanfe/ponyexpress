@@ -1,0 +1,48 @@
+import React from "react"
+import { graphql } from "gatsby"
+import LayoutSections from "../components/layout_sections"
+import Productos_exp from "../components/productos_exp"
+import { getProductsByCategory } from "../components/data_helpers"
+
+export default function ListaCarta5({ data, location }) {
+  
+  return (
+    <LayoutSections sectionname='Gofres, Crepes, Tortitas'>
+        <div className="eligeTuSabor">
+            <div className="eligeTuSabor__iconos">
+              <img className="eligeTuSabor__icono" src={`../../Icons/Productos/3x/gofre_3x.png`} alt="Gofre"/>
+              <img className="eligeTuSabor__icono" src={`../../Icons/Productos/3x/crepe_3x.png`} alt="Gofre"/>
+              <img className="eligeTuSabor__icono" src={`../../Icons/Productos/3x/tortita_3x.png`} alt="Gofre"/>
+            </div>
+            <div className="eligeTuSabor__textWrapper">
+              <h1 className="eligeTuSabor__titulo">Elige tu sabor!</h1>
+              <ul className="eligeTuSabor__lista">
+                <li>Chocolate caliente</li>
+                <li>Nutella</li>
+                <li>Chocolate blanco</li>
+                <li>Caramelo</li>
+              </ul>
+            </div>
+        </div>
+        <Productos_exp className="gofres_crepes_tortitas" 
+        productos={getProductsByCategory(data.allGoogleSheetTarricugofRow.edges, 'GofreCrepeTortita')}>
+        </Productos_exp>
+    </LayoutSections>
+  )
+}
+
+
+export const query = graphql`
+  {
+    allGoogleSheetTarricugofRow(filter: {categoria: {eq: "GofreCrepeTortita"}}) {
+      edges {
+        node {
+          categoria
+          nombre
+          precio
+          nombreimagen
+        }
+      }
+    }
+  }
+`
