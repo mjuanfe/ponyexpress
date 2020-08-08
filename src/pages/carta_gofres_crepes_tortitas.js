@@ -10,9 +10,9 @@ export default function ListaCarta5({ data, location }) {
     <LayoutSections sectionname='Gofres, Crepes, Tortitas'>
         <div className="eligeTuSabor">
             <div className="eligeTuSabor__iconos">
-              <img className="eligeTuSabor__icono" src={`../../Icons/Productos/3x/gofre_3x.png`} alt="Gofre"/>
-              <img className="eligeTuSabor__icono" src={`../../Icons/Productos/3x/crepe_3x.png`} alt="Gofre"/>
-              <img className="eligeTuSabor__icono" src={`../../Icons/Productos/3x/tortita_3x.png`} alt="Gofre"/>
+              <img className="eligeTuSabor__icono" src={`../../icons/Productos/3x/gofre_3x.png`} alt="Gofre"/>
+              <img className="eligeTuSabor__icono" src={`../../icons/Productos/3x/crepe_3x.png`} alt="Gofre"/>
+              <img className="eligeTuSabor__icono" src={`../../icons/Productos/3x/tortita_3x.png`} alt="Gofre"/>
             </div>
             <div className="eligeTuSabor__textWrapper">
               <h1 className="eligeTuSabor__titulo">Elige tu sabor!</h1>
