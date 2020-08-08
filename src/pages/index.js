@@ -5,9 +5,9 @@ import Layout from "../components/layout"
 //mport Image from "../components/image"
 import SEO from "../components/seo"
 import Header_logo from "../components/header_logo"
-// import Helmet from "react-helmet"
-// import ListaCarta from "./carta"
-// import CartaTest from "./carta"
+//  import Helmet from "react-helmet"
+//  import ListaCarta from "./carta"
+//  import CartaTest from "./carta"
 
 const IndexPage = () => (
   <div >
