@@ -29,7 +29,7 @@ const IndexPage = () => (
 )
 
 
-/*           <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
-          <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROSs</Link> */
+/*            <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
+            <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROSs</Link> */
 
 export default IndexPage
