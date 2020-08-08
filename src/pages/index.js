@@ -17,13 +17,19 @@ const IndexPage = () => (
       <Header_logo></Header_logo>
       <div className="navIndexWrapper">
         <nav className="navIndex">
-          <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
-          <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROSs</Link>
+
           <Link className="navIndex__item" to="/carta" state={{modal: true}}>VER CARTA</Link>
+          <div className="avisoPC">
+            <h1>Aviso</h1>
+            Para una mejor experiencia le recomendamos que utilize su smartphone para visualizar la carta</div>
         </nav>
       </div>
     </Layout>
   </div>
 )
+
+
+/*           <Link className="navIndex__item" to="/bienvenido" state={{modal: true}}>BIENVENIDO</Link>
+          <Link className="navIndex__item" to="/nosotros" state={{modal: true}}>NOSOTROSs</Link> */
 
 export default IndexPage

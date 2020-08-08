@@ -340,7 +340,49 @@ h1{
   margin-top: 5px;
 }
 
+.productoEsp{
+  margin: 16px 17px 0px 17px;
+  padding: 0px 5px 15px 5px;
+  border-bottom: 1px solid #525252;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.productoEsp__iconoWrapper{
+
+}
+.productoBig__icono{
+  width: 86px;
+  display: block;
+  margin: 0 auto;
+  transform: translateX(-9px);
+}
+.productoEsp__texto{
+ 
+}
+.productoEsp__nombre{
+  line-height: 22px;
+}
+.productoEsp__descipcion{
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.productoEsp__precioWrapper{
+  /* min-width: 42px; */
+}
+
+.productoEsp .producto__precio {
+  width: 0;
+  min-width: 42px;
+}
+
 /* =========== */
+
 /* COPAS */
 .copas{
   /*padding-top: 3px;*/
@@ -356,13 +398,29 @@ h1{
   visibility: hidden;
 }
 
-
+.avisoPC{
+  display: none;
+}
 
 /* NOT MOBILE DEVICES */
 @media (min-width: 640px) { 
   
-.logoSvg{
-  fill: #e5ff00;
+.avisoPC {
+  display: block;
+  text-align: center;
+  background-color: #b36f6f;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 27px;
+  width: 302px;
+  font-family: Roboto;
+  font-size: 15px;
+  color: #2d2020;
+
+}
+
+.avisoPC h1 {
+  margin-bottom: 20px;
 }
 
 }
@@ -370,6 +428,9 @@ h1{
 
   
 /*
+.logoSvg{
+  fill: #e5ff00;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
