@@ -29,7 +29,7 @@ const Productos_exp = ({className, productos}) => {
                         <div key={index} className="productoBig">
                             <div className="productoBig_iconoWrapper">
                                 <img className={handleClass(producto.nombre)}
-                                src={`../../Icons/Productos/3x/${producto.nombreimagen}_3x.png`} alt="icono producto"/>
+                                src={`../../icons/Productos/3x/${producto.nombreimagen}_3x.png`} alt="icono producto"/>
                             </div>
                             <li className="productoBig__nombre"
                             dangerouslySetInnerHTML={{__html: producto.nombre}}>

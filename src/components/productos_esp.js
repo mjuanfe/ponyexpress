@@ -11,7 +11,7 @@ const Productos_esp = ({productos, className}) => {
                         <div key={index} className="productoEsp">
                             <div className="productoEsp__iconoWrapper">
                                 <img className="productoBig__icono"
-                                src={`../../Icons/Productos/3x/${producto.nombre}_p.png`} alt="icono producto"/>
+                                src={`../../icons/Productos/3x/${producto.nombre}_p.png`} alt="icono producto"/>
                             </div>
                             <div className="productoEsp__texto">
                                 <li className="productoEsp__nombre">
