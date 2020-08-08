@@ -19,8 +19,8 @@ const Productos_exp = ({className, productos}) => {
                  }
         else return 'productoBig_icono'
     }
-//producto.node.nombre __html: producto.node.nombre
-//<p className="productoBig__precio">{producto.node.precio}</p>
+//  producto.node.nombre __html: producto.node.nombre
+//  <p className="productoBig__precio">{producto.node.precio}</p>
     return (
         <div className={className}>
             {
