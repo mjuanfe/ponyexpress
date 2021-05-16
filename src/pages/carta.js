@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import LayoutCarta from "../components/layout_carta"
 
 export default function Carta({ data, location }) {
-   // console.log(location.pathname);
+     // console.log(location.pathname);
   return (
 
     <LayoutCarta sectionname='CARTA'>
@@ -55,19 +55,3 @@ const cartaIndex = [
     name: 'SABORES HELADO'
   },
 ];
-
-
-/*
-  type Sequence {
-    items(first: Int): [Item]
-  }
-    {
-    route: '/cucuruchos',
-    name: 'CUCURUCHOS'
-  },
-  {
-    route: '/copas_simples',
-    name: 'COPAS SIMPLES'
-  },
-
-  */

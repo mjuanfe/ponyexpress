@@ -2,17 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import LayoutSections from "../components/layout_sections"
 import Productos from "../components/productos"
+import { getProductsByCategory } from "../components/data_helpers"
+import Productos_esp from "../components/productos_esp"
 
 export default function ListaCarta2({ data, location }) {
   
   return (
     <LayoutSections sectionname='ESPECIALIDADES'>
       <h1 className="carta__tituloSubseccion">Pony Express</h1>
-        <Productos categoria='Especialidades' productos={getProductsByCategory(data,'Especialidades')}></Productos>
+        <Productos_esp className='Especialidades' productos={getProductsByCategory(data.allGoogleSheetPrincipalRow.edges, 'Especialidades')}></Productos_esp>
     </LayoutSections>
   )
 }
-
+/*
 function getProductsByCategory(data, categoria){
   var products;
   
@@ -25,7 +27,7 @@ function getProductsByCategory(data, categoria){
   //console.log(products);
   return products
 }
-
+*/
 
 export const query = graphql`
   {

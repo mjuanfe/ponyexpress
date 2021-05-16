@@ -36,6 +36,22 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
+          worksheetTitle: 'Tarricugof',
+          credentials: require('./credentials.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
+          worksheetTitle: 'Sabores',
+          credentials: require('./credentials.json')
+      }
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
@@ -72,6 +88,12 @@ module.exports = {
         //cookieDomain: "example.com",
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
