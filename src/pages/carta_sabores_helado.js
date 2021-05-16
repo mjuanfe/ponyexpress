@@ -37,6 +37,7 @@ export const query = graphql`
           nombre
           vegano
           sinazucar
+          novedad
           nodisponible
         }
       }

@@ -3,32 +3,39 @@ import React from 'react';
 import Producto_crema from "./producto_crema"
 
 const Productos_cremas = ({className, productos}) => {
-    //console.log(productos);
+    //console.log(productos)dd;
     return (
         <div className={className}>
             {
                 productos.map((producto,index) => {
-                    return (
-                        <Producto_crema producto={producto} 
-                        etiquetas={
-                            [
-                                {
-                                    nodisponible: producto.node.nodisponible != null ?  "No disponible" : null ,
-                                    //texto: "No disponible"
-                                },
-                                {
-                                    sinazucar: producto.node.sinazucar != null ?  "Sin azúcar" : null ,
-                                    //texto: "Sin azucar"
-                                },
-                                {
-                                    vegano: producto.node.vegano != null ?  "Vegano" : null ,
-                                    //texto: "Vegano"
-                                }  
-                                
-                                //producto.node.nodisponible, producto.node.sinazucar, producto.node.vegano
-                            ]
-                        }></Producto_crema>
-                    )
+                    if(producto.node.nodisponible != 'x'){
+                        return (
+                            <Producto_crema producto={producto} 
+                            etiquetas={
+                                [
+                                    {
+                                        nodisponible: producto.node.nodisponible != null ?  "No disponible" : null ,
+                                        //texto: "No disponible"
+                                    },
+                                    {
+                                        sinazucar: producto.node.sinazucar != null ?  "Sin azúcar" : null ,
+                                        //texto: "Sin azucar"
+                                    },
+                                    {
+                                        vegano: producto.node.vegano != null ?  "Vegano" : null ,
+                                        //texto: "Vegano"
+                                    },
+                                    {
+                                        novedad: producto.node.novedad != null ?  "Novedad" : null ,
+                                        //texto: "Novedad"
+                                    }  
+                                    
+                                    //producto.node.nodisponible, producto.node.sinazucar, producto.node.vegano
+                                ]
+                            }></Producto_crema>
+                        )
+                    }
+
                 })
             }
         </div>
