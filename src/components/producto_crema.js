@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Producto_crema = ({producto, etiquetas}) => {
-    //console.log(etiquetas);
+    //console.log(etiquetas); PRUEBA DE CAMBIO GIT
     return (
     <div className="productoCrema">
         <img className="productoCrema__icono" src={`../../icons/2x/${producto.node.nombre}_2x.png`} alt="icono producto"/>
