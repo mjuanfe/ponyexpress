@@ -19,7 +19,7 @@ const IndexPage = () => (
         <nav className="navIndex">
 
           <Link className="navIndex__item" to="/carta" state={{modal: true}}>VER CARTA</Link>
-          <p>Carta actualizada 2021</p>
+          
           <div className="avisoPC">
             <h1>Aviso</h1>
             Para una mejor experiencia le recomendamos que utilize su smartphone para visualizar la carta</div>
