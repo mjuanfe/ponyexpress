@@ -8,7 +8,7 @@ export default function ListaCarta6({ data, location }) {
   
   return (
     <LayoutSections sectionname='Sabores Helado'>
-        <Productos_cremas className="cremas" productos={data.allGoogleSheetSaboresRow.edges}></Productos_cremas>
+        <Productos_cremas className="cremas" productos={data.allGoogleSaboresSheet.edges}></Productos_cremas>
     </LayoutSections>
   )
 }
@@ -31,14 +31,14 @@ function getProductsByCategory(data, categoria){
 
 export const query = graphql`
 {
-    allGoogleSheetSaboresRow {
+    allGoogleSaboresSheet {
       edges {
         node {
           nombre
           vegano
-          sinazucar
+          sinAzucar
           novedad
-          nodisponible
+          noDisponible
         }
       }
     }

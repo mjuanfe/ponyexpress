@@ -10,7 +10,7 @@ export default function ListaCarta2({ data, location }) {
   return (
     <LayoutSections sectionname='ESPECIALIDADES'>
       <h1 className="carta__tituloSubseccion">Pony Express</h1>
-        <Productos_esp className='Especialidades' productos={getProductsByCategory(data.allGoogleSheetPrincipalRow.edges, 'Especialidades')}></Productos_esp>
+        <Productos_esp className='Especialidades' productos={getProductsByCategory(data.allGooglePrincipalSheet.edges, 'Especialidades')}></Productos_esp>
     </LayoutSections>
   )
 }
@@ -29,9 +29,10 @@ function getProductsByCategory(data, categoria){
 }
 */
 
+
 export const query = graphql`
   {
-    allGoogleSheetPrincipalRow {
+    allGooglePrincipalSheet {
       edges {
         node {
           nombre

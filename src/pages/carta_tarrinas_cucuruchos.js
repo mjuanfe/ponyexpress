@@ -11,16 +11,16 @@ export default function ListaCarta4({ data, location }) {
         <span className="espaciador"></span>
         <span className="espaciador"></span>
         <Productos_exp className="tarrinas"
-          productos={getProductsByCategory(data.allGoogleSheetTarricugofRow.edges, 'Helado clásico', 0, 3)}>
+          productos={getProductsByCategory(data.allGoogleTarricugofSheet.edges, 'Helado clásico', 0, 3)}>
         </Productos_exp>
         <span className="espaciador"></span>
         <Productos_exp className="cucuruchos"
-          productos={getProductsByCategory(data.allGoogleSheetTarricugofRow.edges, 'Helado clásico', 3, 6)}>
+          productos={getProductsByCategory(data.allGoogleTarricugofSheet.edges, 'Helado clásico', 3, 6)}>
         </Productos_exp> 
         <span className="espaciador"></span>
         <span className="espaciador"></span>
         <Productos_exp className="otros"
-          productos={getProductsByCategory(data.allGoogleSheetTarricugofRow.edges, 'Otros')}>
+          productos={getProductsByCategory(data.allGoogleTarricugofSheet.edges, 'Otros')}>
         </Productos_exp> 
         <span className="espaciador espaciador--2"></span>
     </LayoutSections>
@@ -30,13 +30,13 @@ export default function ListaCarta4({ data, location }) {
 
 export const query = graphql`
   {
-    allGoogleSheetTarricugofRow {
+    allGoogleTarricugofSheet {
       edges {
         node {
           categoria
           nombre
           precio
-          nombreimagen
+          nombreImagen
         }
       }
     }

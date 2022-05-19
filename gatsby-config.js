@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,27 +29,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-google-sheets',
+      resolve: 'gatsby-source-google-spreadsheets',
       options: {
-          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'Principal',
-          credentials: require('./credentials.json')
-      }
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'Tarricugof',
-          credentials: require('./credentials.json')
-      }
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
-          worksheetTitle: 'Sabores',
-          credentials: require('./credentials.json')
+        spreadsheetId: '13hD0bH9yILeil2roPC4yMXKwLNdIGjylqAj_BYObhRw',
+        apiKey: '64caa30bb496a28402a7f0e86197cae5d0153c8b',
+        // Or
+        credentials: require('./credentials.json')
       }
     },
     {
@@ -60,35 +46,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-173483108-1",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // Setting this parameter is optional
-        //anonymize: true,
-        // Setting this parameter is also optional
-        //respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        //exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        //pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-       // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Enables Google Optimize Experiment ID
-       // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // Set Variation ID. 0 for original 1,2,3....
-       // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Defers execution of google analytics script after page load
-        //defer: false,
-        // Any additional optional fields
-        //sampleRate: 5,
-        //siteSpeedSampleRate: 10,
-        //cookieDomain: "example.com",
-      },
-    },
-    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
@@ -98,13 +55,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-};
-
-
-/*
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
-GATSBY_GRAPHQL_IDE=playground
-*/
+}

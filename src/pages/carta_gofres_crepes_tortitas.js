@@ -25,7 +25,7 @@ export default function ListaCarta5({ data, location }) {
             </div>
         </div>
         <Productos_exp className="gofres_crepes_tortitas" 
-        productos={getProductsByCategory(data.allGoogleSheetTarricugofRow.edges, 'GofreCrepeTortita')}>
+        productos={getProductsByCategory(data.allGoogleTarricugofSheet.edges, 'GofreCrepeTortita')}>
         </Productos_exp>
     </LayoutSections>
   )
@@ -34,13 +34,13 @@ export default function ListaCarta5({ data, location }) {
 
 export const query = graphql`
   {
-    allGoogleSheetTarricugofRow(filter: {categoria: {eq: "GofreCrepeTortita"}}) {
+    allGoogleTarricugofSheet(filter: {categoria: {eq: "GofreCrepeTortita"}}) {
       edges {
         node {
           categoria
           nombre
           precio
-          nombreimagen
+          nombreImagen
         }
       }
     }

@@ -12,7 +12,7 @@ const Producto_crema = ({producto, etiquetas}) => {
                 etiquetas.map((etiqueta,i) => {
                     for (const prop in etiqueta) {
                         if (etiqueta[prop] != null) return (
-                            <li className={`productoCrema__etiqueta productoCrema__etiqueta--${prop}`}>
+                            <li className={`productoCrema__etiqueta productoCrema__etiqueta--${prop}`} key={i}>
                                 {etiqueta[prop]}
                                 </li>
                         )

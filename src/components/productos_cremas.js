@@ -8,9 +8,9 @@ const Productos_cremas = ({className, productos}) => {
         <div className={className}>
             {
                 productos.map((producto,index) => {
-                    if(producto.node.nodisponible != 'x'){
+                    if(producto.node.noDisponible != 'x'){
                         return (
-                            <Producto_crema producto={producto} 
+                            <Producto_crema producto={producto} key={index}
                             etiquetas={
                                 [
                                     {
@@ -18,7 +18,7 @@ const Productos_cremas = ({className, productos}) => {
                                         //texto: "No disponible"
                                     },
                                     {
-                                        sinazucar: producto.node.sinazucar != null ?  "Sin azúcar" : null ,
+                                        sinazucar: producto.node.sinAzucar != null ?  "Sin azúcar" : null ,
                                         //texto: "Sin azucar"
                                     },
                                     {
@@ -26,7 +26,7 @@ const Productos_cremas = ({className, productos}) => {
                                         //texto: "Vegano"
                                     },
                                     {
-                                        novedad: producto.node.novedad != null ?  "Novedad" : null ,
+                                        novedad: producto.node.novedad != null ?  "Novedad 2022" : null ,
                                         //texto: "Novedad"
                                     }  
                                     
