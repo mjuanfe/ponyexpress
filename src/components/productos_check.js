@@ -1,21 +1,21 @@
 import React from 'react';
-import Producto from "../components/producto";
+import ProductoCheck from "../components/producto_check";
 //import { graphql } from "gatsby"
 
-const Productos = ({categoria, productos}) => {
+const ProductosCheck = ({categoria, productos}) => {
 
     return (
         <div className={categoria}>
             {
                 productos.map((producto,index) => {
-                    return <Producto key={index} node={producto.node}></Producto>
+                    return <ProductoCheck key={index} node={producto.node}></ProductoCheck>
                 })
             }
         </div>
     )
 };
 
-export default Productos;
+export default ProductosCheck;
 
 
 /*
