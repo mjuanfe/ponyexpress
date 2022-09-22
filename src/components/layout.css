@@ -209,6 +209,11 @@ h1{
   width: 90px;
 }
 
+.aviso-feria{
+  display: flex;
+  font-family: 'Roboto';
+  margin: 20px;
+}
 .cremas{
   margin: 30px;
 }

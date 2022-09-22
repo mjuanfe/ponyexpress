@@ -8,6 +8,7 @@ export default function ListaCarta6({ data, location }) {
   
   return (
     <LayoutSections sectionname='Sabores Helado'>
+      <div className="aviso-feria"><strong>Aviso feria 2022 Munera:</strong> Estamos en la recta final de nuestro servicio de heladería, consulta las cremas disponibles, rápido que se agotan!!</div>
         <Productos_cremas className="cremas" productos={data.allGoogleSaboresSheet.edges}></Productos_cremas>
     </LayoutSections>
   )
