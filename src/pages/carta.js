@@ -7,13 +7,18 @@ export default function Carta({ data, location }) {
   return (
 
     <LayoutCarta sectionname='CARTA'>
-     
       <p className="carta__mensaje">
+          Nuestra temporada de heladería se despide hasta el año próximo. <br></br>
+          Recuerda que el habitual servicio de cafeteria y bar sigue en marcha. <br />
+          Gracias a todos!
+      </p>
+      
+{/*       <p className="carta__mensaje">
         Con el buen tiempo ponemos en marcha nuestra famosa heladería, <br></br>
         explora aquí la gran oferta de <strong>helados.</strong> <br></br> <br></br>
         Como siempre tienes disponible el habitual servicio de <strong>cafetería y bar</strong>. <br></br>
-         Pregunta a nuestros camareros!
-      </p>
+        Pregunta a nuestros camareros!
+      </p> */}
       <ul className="carta__lista">
         {
           cartaIndex.map((data, index) => {
